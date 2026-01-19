@@ -1,0 +1,89 @@
+/* App.css */
+.app-container {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Navbar: Elegant & Minimal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-family: var(--font-header);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: var(--deep-charcoal);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-cta {
+  border: 1px solid var(--deep-charcoal);
+  padding: 10px 20px;
+}
+
+/* Hero Section: Centered on Mobile, Spaced on Desktop */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  background-color: var(--soft-cream); /* Reference variables from previous step */
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  color: var(--warm-gray);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+  font-family: var(--font-header);
+  font-size: clamp(3rem, 10vw, 5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.primary-btn {
+  background: var(--deep-charcoal);
+  color: white;
+  padding: 18px 45px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: 0.3s;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* We can add a hamburger menu later */
+  }
+  
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+}
