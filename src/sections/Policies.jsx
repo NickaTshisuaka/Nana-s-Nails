@@ -9,10 +9,10 @@ export default function Policies() {
   const OWNER_EMAIL = "christiankabuya75@gmail.com";
 
   const rules = [
-    { 
-      title: "Booking Deposits", 
-      detail: "A small non-refundable deposit is required to secure your slot. This goes toward your final total." 
-    },
+    // { 
+    //   title: "Booking Deposits", 
+    //   detail: "A small non-refundable deposit is required to secure your slot. This goes toward your final total." 
+    // },
     { 
       title: "House Service", 
       detail: "For mobile bookings, please ensure a clean, well-lit workspace is available for the best results." 
